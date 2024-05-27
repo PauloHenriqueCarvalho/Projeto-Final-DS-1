@@ -42,7 +42,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CadastroController</servlet-name>
-        <url-pattern>/pica</url-pattern>
+        <url-pattern>/cadastro</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>LoginController</servlet-name>
@@ -68,7 +68,10 @@
         <servlet-name>pre_carrinhoController</servlet-name>
         <url-pattern>/pre_carrinho</url-pattern>
     </servlet-mapping>
-    
+    <servlet-mapping>
+        <servlet-name>CadastroController</servlet-name>
+        <url-pattern>/cadastrar-usuario</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30

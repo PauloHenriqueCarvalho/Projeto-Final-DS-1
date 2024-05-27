@@ -1,83 +1,95 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-    "http://www.w3.org/TR/html4/loose.dtd">
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Welcome to Spring Web MVC project</title>
-  <link rel="stylesheet" type="text/css" href="./../style/cadastro.css">
-</head>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Welcome to Spring Web MVC project</title>
+        <link href="./style/cadastro.css" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<body>
+    </head>
 
-  <div class="container">
-    <div class="form-image">
-      <img src="./../img/undraw_Online_test_re_kyfx.png" alt="aaa"/>
-    </div>
-    <div class="form">
-      <form action="#" method="post">
+    <body>
 
-        <p>a</p>
-        <div class="form-header">
-          <div class="title">
-            <h1>Cadastrar-se</h1>
-          </div>
-          <div class="login-button">
-            <button type="button"><a href="#">Entrar</a></button>
-          </div>
+        <div class="container">
+            <div class="form-image">
+                <img src="./img/6405794-conta-login-ilustracao-plana-vetor.jpg" alt="tela-de-cadastro">
+            </div>
+            <div class="form">
+                <form action="cadastrar-usuario" method="post">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Cadastra-se</h1>
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="firstname">Primeiro nome</label>
+                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro name" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="lastname">Usuario</label>
+                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu usuario" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control form-control-lg" required />
+                        </div>
+
+                        <div class="input-box">
+                            <label for="phone">Telefone</label>
+                            <input id="phone" type="text" name="phone" placeholder="(XX- XXXX-XXXX)" required>
+                        </div>                       
+
+                        <div class="input-box">
+                            <label for="date">Nascimento</label>
+                            <input id="date" type="date" name="date" placeholder="(XX/XX/XXXX)" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="cpf">cpf</label>
+                            <input id="cpf" type="number" name="cpf" placeholder=" XXX.XXX.XXX-XX" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="passaword">Senha</label>
+                            <input id="passaword" type="passaword" name="passaword" placeholder="********" required>
+                        </div>
+                    </div>
+
+                    <div class="gender-inputs">
+                        <div class="gender-title">
+                            <h6>Genero</h6>
+                        </div>
+                        <div class="gender-group">
+                            <div class="gender-input">
+                                <input type="radio" id="female" name="gender">
+                                <label for="female"> Feminino</label>
+                            </div>
+
+                            <div class="gender-input">
+                                <input type="radio" id="female" name="gender">
+                                <label for="male"> Masculino</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-button">
+                        <button type="submit">Entrar</button>
+                    </div>
+                </form>
+            </div>
+
         </div>
 
-        <div class="input-box">
-          <label for="firstname">Primeiro nome</label>
-          <input type="text" id="firstname" name="firstname" placeholder="Digite seu nome" required>
-        </div>
-
-        <div class="input-box">
-          <label for="lastname">Segundo nome</label>
-          <input type="text" id="lastname" name="lastname" placeholder="Digite seu sobrenome" required>
-        </div>
-
-        <div class="input-box">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-        </div>
-
-        <div class="input-box">
-          <label for="number">Celular</label>
-          <input type="text" id="number" name="number" placeholder="(xx) xxxx-xxxx" required>
-        </div>
-
-        <div class="input-box">
-          <label for="password">Senha</label>
-          <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
-        </div>
-    </div>
-
-    <div class="gender-inputs">
-      <div class="gender-title">
-        <h6>Gênero</h6>
-      </div>
-
-      <div class="gender-group">
-        <div class="gender-input">
-          <input type="radio" id="female" name="gender">
-          <label for="female">Feminino</label>
-        </div>
-
-        <div class="gender-input">
-          <input type="radio" id="female" name="gender">
-          <label for="male">Masculino</label>
-        </div>
-      </div>
-    </div>
-
-    <div class="continue-button">
-      <button><a href="./login">Continuar</a></button>
-    </div>
-    </form>
-  </div>
-
-</body>
+    </body>
+    <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"
+    ></script>
+    
 
 </html>

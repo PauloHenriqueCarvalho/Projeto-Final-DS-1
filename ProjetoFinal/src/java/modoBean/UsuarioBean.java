@@ -1,7 +1,7 @@
 package modoBean;
 
 
-import java.util.Date;
+import java.sql.Date;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -23,11 +23,12 @@ public class UsuarioBean {
     private Date data_nascimento;
     private String cpf;
     private String adm;
+    private String email;
 
     public UsuarioBean() {
     }
 
-    public UsuarioBean(int id_usuario, String nome, String senha, String usuario, String telefone, Date data_nascimento, String cpf, String adm) {
+    public UsuarioBean(int id_usuario, String nome, String senha, String usuario, String telefone, Date data_nascimento, String cpf, String adm, String email) {
         this.id_usuario = id_usuario;
         this.nome = nome;
         this.senha = senha;
@@ -36,6 +37,7 @@ public class UsuarioBean {
         this.data_nascimento = data_nascimento;
         this.cpf = cpf;
         this.adm = adm;
+        this.email = email;
     }
 
     public int getId_usuario() {
@@ -101,7 +103,14 @@ public class UsuarioBean {
     public void setAdm(String adm) {
         this.adm = adm;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
     
-    
-    
+
 }
